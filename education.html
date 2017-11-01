@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Bootstrap Example</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+    ul1{
+        font-size: 150%;
+    }
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+        margin-bottom: 0;
+        border-radius: 0;
+    }
+
+    /* Add a gray background color and some padding to the footer */
+    footer {
+        background-color: #f2f2f2;
+        padding: 25px;
+    }
+</style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Portfolio</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li><a href="#">首頁</a></li>
+                <li class="active"><a href="#">簡歷</a></li>
+                <li><a href="#">學術</a></li>
+                <li><a href="#">著作</a></li>
+                <li><a href="#">學生</a></li>
+                <li><a href="#">常用連結</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> 登入</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container">
+    <h2>簡歷</h2>
+    <ul class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#menu0">學歷</a></li>
+        <li><a data-toggle="tab" href="#menu1">經歷</a></li>
+        <li><a data-toggle="tab" href="#menu2">教學</a></li>
+        <li><a data-toggle="tab" href="#menu3">參加團體</a></li>
+        <li><a data-toggle="tab" href="#menu4">專題演講</a></li>
+        <li><a data-toggle="tab" href="#menu5">榮譽</a></li>
+        <li><a data-toggle="tab" href="#menu6">證照</a></li>
+        <li><a data-toggle="tab" href="#menu7">專利</a></li>
+        <li><a data-toggle="tab" href="#menu8">服務</a></li>
+        <li><a data-toggle="tab" href="#menu9">輔導</a></li>
+    </ul>
+
+    <div class="tab-content">
+        <div id="menu0" class="tab-pane fade in active">
+            <h3>學歷</h3>
+            <ul1>沙鹿國小 (1972.9-1978.6)</ul1><br>
+            <ul1>沙鹿國中 (1978.9-1981.6)</ul1><br>
+            <ul1>台中一中 (1981.9-1984.6)</ul1><br>
+            <ul1>大同工學院資訊工程系   (1985.9-1989.6)</ul1><br>
+            <ul1>中正大學資訊工程所 碩士(1991.9-1993.6)</ul1><br>
+            <ul1>中正大學資訊工程所 博士(1993.9-2002.6)</ul1><br>
+
+        </div>
+        <div id="menu1" class="tab-pane fade">
+            <h3>經歷</h3>
+            <ul1>1988.5  -1989.5  大同公司 網路組工讀</ul1><br>
+            <ul1>1989.7  -1991.5  預官第39期步兵排長 (陸軍步校（受訓）)(陸軍官校（資訊中心少尉教官）)</ul1><br>
+            <ul1>1997.2  -1997.5  第28屆全國大專運動會資訊組 測試規劃負責人</ul1><br>
+            <ul1>1999.12 -2000.4  網路資料庫、程式設計班講師(青輔會委託中正大學辦理，共三梯次)</ul1><br>
+            <ul1>2002.8  -2003.1  澎湖技術學院 電算中心 系統作業與支援組 組長</ul1><br>
+        </div>
+        <div id="menu2" class="tab-pane fade">
+            <h3>Menu 2</h3>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+        </div>
+        <div id="menu3" class="tab-pane fade">
+            <h3>Menu 3</h3>
+            <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
