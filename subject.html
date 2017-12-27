@@ -8,18 +8,24 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <style>
-        /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
-        .row.content {height: 1500px}
+        /* Remove the navbar's default margin-bottom and rounded borders */
+        .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
+        }
+
+
+        rowcontent {height: 1500px}
 
         /* Set gray background color and 100% height */
-        .sidenav {
+        sidenav {
             background-color: #f1f1f1;
             height: 100%;
         }
 
         /* Set black background color, white text and some padding */
         footer {
-            background-color: #555;
+            background-color: #f1f1f1;
             color: white;
             padding: 15px;
         }
@@ -36,115 +42,148 @@
 </head>
 <body>
 
-<div class="container-fluid">
-    <div class="row content">
-        <div class="col-sm-3 sidenav">
-            <h4><img src="http://dns2.asia.edu.tw/~jdwang/910100540_jdwang_2011_12_7.jpg"  style="width:2cm"  alt="Image">王經篤</h4>
-            <ul class="nav nav-pills nav-stacked">
-                <li ><a href="index.html">首頁</a></li>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Portfolio</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">首頁</a></li>
                 <li><a href="education.html">學經歷</a></li>
-                <li class="active"><a href="subject.html">研究與專長</a></li>
+                <li><a href="subject.html">研究與專長</a></li>
                 <li><a href="#">研究計畫</a></li>
-                <li><a href="#">教授課程</a></li>
+                <li><a href="teach.html">教授課程</a></li>
                 <li><a href="#">學生</a></li>
                 <li><a href="#">著作目錄</a></li>
                 <li><a href="#">常去網站</a></li>
                 <li><a href="#">參考期刊</a></li>
-            </ul><br>
-            <!--<div class="input-group">-->
-                <!--<input type="text" class="form-control" placeholder="Search Blog..">-->
-                <!--<span class="input-group-btn">-->
-          <!--<button class="btn btn-default" type="button">-->
-            <!--<span class="glyphicon glyphicon-search"></span>-->
-          <!--</button>-->
-        <!--</span>-->
-            <!--</div>-->
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> 登入</a></li>
+            </ul>
         </div>
-
+    </div>
+</nav>
         <div class="col-sm-9">
             <h4><font size="24">研究與專長</font></h4>
             <hr>
             <h2>Text Mining</h2>
-            <h3><il>○<a href="http://dns2.asia.edu.tw/~jdwang/corpus.htm">Corpus</a></il></h3><br>
-            <h3><il>○<a href="http://dns2.asia.edu.tw/~jdwang/text_archaeology.htm">Text Archaeology</a>(文件考古學) (diachronic corpora)(historical corpora)</il></h3><br>
-            <h4><li>Pattern History</li></h4><br>
-            <il><a href="http://tm.asia.edu.tw/TM/Search_PubMed_Simple.php">PubMed</a></il><br>
-            <il><a href="http://tm.asia.edu.tw/TM/Search_CNA_Simple.php">CNA</a></il><br>
-            <il><a href="http://tm.asia.edu.tw/TM/Search_ROCPatent_Simple.php">The Patents in R.O.C</a></il><br>
-            <h4><li>Term History Mining</li></h4><br>
-            <h4><li>Phrase History Mining</li></h4><br>
-            <h4><li>Event History Mining</li></h4><br>
-            <h4><li><a href="http://dns2.asia.edu.tw/~jdwang/TextMiningResource.htm">Text Mining Resource</a></li></h4><br>
-            <h4><li><a href="http://buzz.opview.com.tw/Home">OpView</a></li></h4><br>
-            <h4><li><a href="http://www.geo.com.tw/about_geo.html">巨鷗科技股份有限公司</a></li></h4><br>
-            <h4><li>neologism(新詞; 新義)</li></h4><br>
-            <h3><il>○(by <a href="http://www.analyticsvidhya.com/blog/author/tavish/">Tavish Srivastava</a>)<a href="http://www.analyticsvidhya.com/blog/2014/09/creating-dictionary-text-mining/?utm_source=Linkedinstatus&utm_medium=Social&utm_campaign=040914">Having the right dictionary is at the heart of any text mining analysis.</a></il></h3><br>
-            <h3><il>○Biomedical literature mining</il></h3><br>
-            <h4><li><a href="http://stemcell.iis.sinica.edu.tw/bioinfo/current_publications-4.html4"></a>中研院</li></h4><br>
-            <h4><li><a href="http://www.scitopics.com/Biological_Literature_Mining.html"></a>Biological Literature Mining(Prof Wen-Lian Hsu)http://iasl.iis.sinica.edu.tw/BioNER_intro04.htm</li></h4><br>
-            <h4><li><a href="http://en.wikipedia.org/wiki/Biomedical_text_mining"></a>Wikipedia</li></h4><br>
-            <h4><li><a href="http://blimp.cs.queensu.ca/#search"></a>BLIMP</li></h4><br>
-            <h4><li><a href="http://www.biomax.com/products/products.php"></a>BioMax</li></h4><br>
-            <h4><li><a href="http://www.biomax.com/products/biolt.php"></a>BioLT</li></h4><br>
+            <a href="http://dns2.asia.edu.tw/~jdwang/corpus.htm">Corpus</a><br>
+            <a href="http://dns2.asia.edu.tw/~jdwang/text_archaeology.htm">Text Archaeology</a>(文件考古學) (diachronic corpora)(historical corpora)<br>
+            Pattern History<br>
+            <a href="http://tm.asia.edu.tw/TM/Search_PubMed_Simple.php">PubMed</a><br>
+            <a href="http://tm.asia.edu.tw/TM/Search_CNA_Simple.php">CNA</a><br>
+            <a href="http://tm.asia.edu.tw/TM/Search_ROCPatent_Simple.php">The Patents in R.O.C</a><br>
+            Term History Mining<br>
+            Phrase History Mining<br>
+            Event History Mining<br>
+            <a href="http://dns2.asia.edu.tw/~jdwang/TextMiningResource.htm">Text Mining Resource</a><br>
+            <a href="http://buzz.opview.com.tw/Home">OpView</a><br>
+            <a href="http://www.geo.com.tw/about_geo.html">巨鷗科技股份有限公司</a><br>
+            neologism(新詞; 新義)<br>
+            (by <a href="http://www.analyticsvidhya.com/blog/author/tavish/">Tavish Srivastava</a>)<a href="http://www.analyticsvidhya.com/blog/2014/09/creating-dictionary-text-mining/?utm_source=Linkedinstatus&utm_medium=Social&utm_campaign=040914">Having the right dictionary is at the heart of any text mining analysis.</a><br>
+            Biomedical literature mining<br>
+            <a href="http://stemcell.iis.sinica.edu.tw/bioinfo/current_publications-4.html4">中研院</a></li><br>
+            <a href="http://www.scitopics.com/Biological_Literature_Mining.html">Biological Literature Mining(Prof Wen-Lian Hsu)http://iasl.iis.sinica.edu.tw/BioNER_intro04.htm</a><br>
+            <a href="http://en.wikipedia.org/wiki/Biomedical_text_mining">Wikipedia</a><br>
+            <a href="http://blimp.cs.queensu.ca/#search">BLIMP</a><br>
+            <a href="http://www.biomax.com/products/products.php">BioMax</a><br>
+            <a href="http://www.biomax.com/products/biolt.php">BioLT</a><br>
+            中文文件分類<br>
+            中文資訊擷取<br>
+            中文新聞<br>
+            Related Texts Research Experts<br>
+            free temporal corpora<br>
 
+            <a href="">Web-based Text Mining<br>
+            Natural language processing API: entity extraction, text categ, etc.</a><br>
+            <a href=""></a>Thorsten Joachims<br>
+            <a href=""></a>IN-SPIRE<br>
 
+            <a href=""></a>FeatureLens<br>
 
-            <br><br>
+            <a href=""></a>BasketLens<br>
 
-            <h4><small>RECENT POSTS</small></h4>
-            <hr>
-            <h2>Officially Blogging</h2>
-            <h5><span class="glyphicon glyphicon-time"></span> Post by John Doe, Sep 24, 2015.</h5>
-            <h5><span class="label label-success">Lorem</span></h5><br>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <hr>
+            <a href=""></a>Patent iNSIGHT Pro (Blog)<br>
+            <a href=""></a>曾元顯教授<br>
+            <a href=""></a>Publications<br>
+            <a href=""></a>Classified News<br>
+            <a href=""></a>http://archive.ics.uci.edu/ml/datasets/Reuters-21578+Text+Categorization+Collection<br>
+            <a href=""></a>http://www.nltk.org/  (includes modapte version of the Reuters News corpus)<br>
+            <a href=""></a>DKPro Core is a collection of software components for natural language processing (NLP) based on the Apache UIMA framework<br>
+            <a href=""></a>jARVEST:jARVEST (Java web harvesting library) is a simple web harvesting or web scraping framewor<br>
+            Data Science<br>
 
-            <h4>Leave a Comment:</h4>
-            <form role="form">
-                <div class="form-group">
-                    <textarea class="form-control" rows="3" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-success">Submit</button>
-            </form>
-            <br><br>
+            <a href=""></a>What is data science?(by Mike Loukides | @mikeloukides | Comments: 43 |  2 June 2010)<br>
+            <a href=""></a>Data science democratizedWith new tools arriving, data science may soon be in the hands of non-programmers.(by Mac Slocum | @macslocum | Comments: 9 |  1 July 2010)<br>
+            Class Structure Ambiguity<br>
+            <a href=""></a>Claudia Perlich<br>
+            <a href=""></a>HealthCare Intelligence<br>
+            Social Network (社會網絡)<br>
+            <a href=""></a>學習影片-社會網絡分析法實作2013版<br>
+            <a href=""></a>Bibliometrics<br>
+            Shape Query<br>
+            Hierarchical Taxonomy Construction<br>
+            Text<br>
+            Biology<br>
+            <a href=""></a>湯森林<br>
+            Class Ambiguity Regions Detection<br>
+            <a href=""></a>evaluating_the_fitness_of_class.htm<br>
+            Hyper-Graph Partition Algorithm<br>
+            Cluster Analyses<br>
+            <a href=""></a>Survey of clustering-validation techniques<br>
+            <a href=""></a>[跨領域][資訊][醫療] 成大標竿計畫：整合臨床、基因組及蛋白質體資料分析之智慧型疾病生物標記探勘平台<br>
+            生物資訊<br>
+            <a href=""></a>打破過去認知 垃圾DNA有望開啟醫學大躍進<br>
+            <a href=""></a>Bioconductor<br>　
+            <a href=""></a>Sequence Data Mining<br>
+            Distinctive Patterns Mining: Class Marker<br>
+            Sequence Indexing.<br>
+            <a href=""></a>Sequence Classification<br>
+            Virus Classification<br>
+            <a href=""></a>Internal Ribosome Entry Site (IRES)<br>
+            <a href=""></a>黃詩厚最愛病毒學<br>
+            NCBI Genome Sequences<br>
+            <a href=""></a>ftp://ftp.ncbi.nih.gov/genomes/<br>
+            Genomic Signature<br>
+            Nucleotide Frequency Variation<br>
+            Phylogenic Analysis<br>
+            Find genetic relationship between sequences/species.<br>
+            <a href=""></a>MrBayes: Bayesian Inference of Phylogeny<br>
+            <a href=""></a>BEAST<br>
+            <a href=""></a>PAUP http://www.sinauer.com/detail.php?id=8060<br>
+            <a href=""></a>The Genomes OnLine Database (GOLD, http://www.genomesonline.org/)<br>
+            Other Resources<br>
+            <a href=""></a>Java Text Mining API opens new browser window<br>
 
-            <p><span class="badge">2</span> Comments:</p><br>
+            <a href=""></a>www.complexityintelligence.com   -   Natural Language Processing API Tagging, Entity     Recognition in Java<br>
 
-            <div class="row">
-                <div class="col-sm-2 text-center">
-                    <img src="bandmember.jpg" class="img-circle" height="65" width="65" alt="Avatar">
-                </div>
-                <div class="col-sm-10">
-                    <h4>Anja <small>Sep 29, 2015, 9:12 PM</small></h4>
-                    <p>Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <br>
-                </div>
-                <div class="col-sm-2 text-center">
-                    <img src="bird.jpg" class="img-circle" height="65" width="65" alt="Avatar">
-                </div>
-                <div class="col-sm-10">
-                    <h4>John Row <small>Sep 25, 2015, 8:25 PM</small></h4>
-                    <p>I am so happy for you man! Finally. I am looking forward to read about your trendy life. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <br>
-                    <p><span class="badge">1</span> Comment:</p><br>
-                    <div class="row">
-                        <div class="col-sm-2 text-center">
-                            <img src="bird.jpg" class="img-circle" height="65" width="65" alt="Avatar">
+            <a href=""></a>Semantic Content Analyses opens new browser window<br>
+
+            <a href=""></a>www.digicol.de   -   SE is an indexing system to categorises texts automatically<br>
+
+            <a href=""></a>Extract web data quickly opens new browser window<br>
+
+            <a href=""></a>www.mozenda.com/Mining+Text   -   Harvest anything from the Internet Looking for Mining Text?<br>
+
+            <a href=""></a>http://corpus2.byu.edu/web/?c=web&q=21412274<br>
+
+            <a href=""></a>OPUS is a growing collection of translated texts from the web<br>
+
+            <a href=""></a>corpora, size, queries = better resources, more insight, more insight<br>
+
                         </div>
-                        <div class="col-xs-10">
-                            <h4>Nested Bro <small>Sep 25, 2015, 8:28 PM</small></h4>
-                            <p>Me too! WOW!</p>
-                            <br>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+
+
 
 <footer class="container-fluid">
-    <p>Footer Text</p>
+    <p>1</p>
 </footer>
 
 </body>
