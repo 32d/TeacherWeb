@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -54,18 +55,24 @@
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#">首頁</a></li>
-                <li><a href="education.html">學經歷</a></li>
-                <li><a href="subject.html">研究與專長</a></li>
+                <li class="active"><a href="index.php">首頁</a></li>
+                <li><a href="education.php">學經歷</a></li>
+                <li><a href="subject.php">研究與專長</a></li>
                 <li><a href="#">研究計畫</a></li>
-                <li><a href="teach.html">教授課程</a></li>
+                <li><a href="teach.php">教授課程</a></li>
                 <li><a href="#">學生</a></li>
                 <li><a href="#">著作目錄</a></li>
                 <li><a href="#">常去網站</a></li>
                 <li><a href="#">參考期刊</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> 登入</a></li>
+                <?php
+                if ($_SESSION['username'] != null){
+                    echo "<li><a href=\"logout.php\"><span class=\"glyphicon glyphicon-log-out\"></span> 登出</a></li>";
+                }else{
+                    echo "<li><a href=\"login.php\"><span class=\"glyphicon glyphicon-log-in\"></span> 登入</a></li>";
+                }
+                ?>
             </ul>
         </div>
     </div>

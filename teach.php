@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,9 +36,9 @@
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
-                <li><a href="index.html">首頁</a></li>
-                <li class="active"><a href="education.html">學經歷</a></li>
-                <li><a href="subject.html">研究與專長</a></li>
+                <li><a href="index.php">首頁</a></li>
+                <li class="active"><a href="education.php">學經歷</a></li>
+                <li><a href="subject.php">研究與專長</a></li>
                 <li><a href="#">研究計畫</a></li>
                 <li><a href="#">教授課程</a></li>
                 <li><a href="#">學生</a></li>
