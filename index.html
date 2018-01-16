@@ -1,4 +1,3 @@
-<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <title>Bootstrap Example</title>
@@ -36,23 +35,17 @@
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
                 <li class="active"><a href="#">首頁</a></li>
-                <li><a href="education.php">學經歷</a></li>
-                <li><a href="subject.php">研究與專長</a></li>
-                <li><a href="project.php">研究計畫</a></li>
-                <li><a href="teach.php">教授課程</a></li>
-                <li><a href="student.php">學生</a></li>
-                <li><a href="book.php">著作目錄</a></li>
-                <li><a href="website.php">常去網站</a></li>
-                <li><a href="Periodicals.php">參考期刊</a></li>
+                <li><a href="education.html">學經歷</a></li>
+                <li><a href="subject.html">研究與專長</a></li>
+                <li><a href="#">研究計畫</a></li>
+                <li><a href="teach.html">教授課程</a></li>
+                <li><a href="#">學生</a></li>
+                <li><a href="#">著作目錄</a></li>
+                <li><a href="#">常去網站</a></li>
+                <li><a href="#">參考期刊</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <?php
-                if ($_SESSION['username'] != null){
-                    echo "<li><a href=\"logout.php\"><span class=\"glyphicon glyphicon-log-out\"></span> 登出</a></li>";
-                }else{
-                    echo "<li><a href=\"login.php\"><span class=\"glyphicon glyphicon-log-in\"></span> 登入</a></li>";
-                }
-                ?>
+                <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> 登入</a></li>
             </ul>
         </div>
     </div>
@@ -70,11 +63,11 @@
     <h3>看</h3><br>
     <div class="row">
         <div class="col-sm-3">
-            <p><a href="education.php"> 學經歷</a></p>
+            <p><a href="education.html"> 學經歷</a></p>
             <!--<img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">-->
         </div>
         <div class="col-sm-3">
-            <p><a href="subject.php">研究與專長</a></p>
+            <p><a href="subject.html">研究與專長</a></p>
             <!--<img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">-->
         </div>
         <div class="col-sm-3">
